@@ -8,8 +8,16 @@ $('.cell').hover(function(){
 }
 
 
+
 );
 }
+
+function resetColor(){
+    $('button').on('click',function (){
+        createAndPlaceRows(8);
+    });
+}
+
 
 
   
@@ -24,6 +32,8 @@ $(() => {
   
   // Bind your event listeners here:
   $(changeColor);
+  $(resetColor);
+ 
 
 });
 
