@@ -1,16 +1,21 @@
 
-'use strict';
-// Add Event Listeners here:
-$('.cell').hover(
-  function(){
-    $(this).css ('background-color','pink');
 
-  }
+
+
+function changeColor(){
+$('.cell').hover(function(){
+  $(this).addClass('active')
+}
+
 
 );
+}
 
 
-$(cell);
+  
+
+
+
 // When DOM is ready:
 
 
@@ -18,7 +23,10 @@ $(() => {
   createAndPlaceRows(8);
   
   // Bind your event listeners here:
+  $(changeColor);
+
 });
+
   
   
   
